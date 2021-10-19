@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Route, Switch, useRouteMatch } from 'react-router';
 import MainPage from './pages/Main';
 import AddEditPage from './pages/AddEdit';
-import NotFound from '../../components/NotFound';
+import NotFound from 'components/NotFound';
 
 Photo.propTypes = {};
 
