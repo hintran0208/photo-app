@@ -40,7 +40,7 @@ function PhotoForm(props) {
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
-      onSubmit={(values) => console.log('Submit:', values)}
+      onSubmit={props.onSubmit}
     >
       {(formikProps) => {
         // do something here ...
