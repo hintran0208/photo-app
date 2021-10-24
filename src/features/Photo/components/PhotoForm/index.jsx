@@ -6,7 +6,7 @@ import SelectField from 'custom-fields/SelectField';
 import { FastField, Form, Formik } from 'formik';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Button, FormGroup, Label } from 'reactstrap';
+import { Button, FormGroup, Label, Spinner } from 'reactstrap';
 import * as Yup from 'yup';
 
 PhotoForm.propTypes = {
@@ -44,7 +44,7 @@ function PhotoForm(props) {
     >
       {(formikProps) => {
         // do something here ...
-        const { values, errors, touched } = formikProps;
+        const { values, errors, touched, isSubmitting } = formikProps;
         console.log({ values, errors, touched });
 
         return (
@@ -68,6 +68,7 @@ function PhotoForm(props) {
 
             <FormGroup>
               <Button type="submit" color="primary">
+                {isSubmitting && <Spinner size="sm" />}
                 Add to album
               </Button>
             </FormGroup>
