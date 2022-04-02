@@ -2,6 +2,30 @@
 
 ![Photo App screenshot](./src/assets/images/screenshot.png)
 
+## Introduction
+
+- Simple application to manage favorite image, choose from https://pisum.photos/
+- CRUD operators
+- Include 2 pages:
+  - `Home`: listing + view + delete
+  - `AddEdit`: using for add new + edit infor of photo
+- Features:
+  - Render favorite image list
+  - Add new photo
+  - Edit photo
+  - Remove photo
+  - Persist data when reload browser
+  - Random photo from https://pisum.photos/
+  - Show photo from https://pisum.photos/ before submit
+
+## Technology
+
+- ReactJS (CRA)
+- Redux (Redux Toolkit)
+- Formik
+- React Router
+- Reactstrap
+
 ## Setup environment
 
 ### 1. Setup ReactJS App using Create React App
